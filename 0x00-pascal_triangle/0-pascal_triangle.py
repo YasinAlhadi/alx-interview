@@ -6,8 +6,12 @@
 
 def pascal_triangle(n):
     """Pascal Triangle"""
+    triangle_list = []
+
     if (n <= 0):
-        return []
+        return triangle_list
+
     for i in range(n):
-        print(' '*(n-i), end='')
-        print(' '.join(map(str, str(11**i))))
+        n = 11 ** i
+        triangle_list.append(str(n))
+    return triangle_list
