@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """ a script that reads stdin line by line and computes metrics """
-import re
 import sys
 
 if __name__ == "__main__":
